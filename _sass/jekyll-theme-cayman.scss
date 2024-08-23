@@ -3,6 +3,8 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
+$code-text-color2 : #666877;
+
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
@@ -221,7 +223,7 @@ a {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
-    color: $code-text-color;
+    color: $code-text-color2;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
   }
@@ -231,7 +233,7 @@ a {
     margin-top: 0;
     margin-bottom: 1rem;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: $code-text-color;
+    color: $code-text-color2;
     word-wrap: normal;
     background-color: $code-bg-color;
     border: solid 1px $border-color;
@@ -241,7 +243,7 @@ a {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
-      color: $code-text-color;
+      color: $code-text-color2;
       word-break: normal;
       white-space: pre;
       background: transparent;
