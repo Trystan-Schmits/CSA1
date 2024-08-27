@@ -4,6 +4,7 @@ title: Student Home
 description: Home Page
 hide: true
 ---
+# Trystan
 My journey starts here.
 
 <table>
@@ -71,13 +72,13 @@ clearStorage.addEventListener("click",()=>{
 ```
 # Show the active Ruby version, it needs to be 3 or higher
     ruby -v
-    # Bundler version, it is part of Ruby install
+# Bundler version, it is part of Ruby install
     bundle -v
 
-    # Show active Python version, it needs to be 3.10 or better (mine should currently be 3.10.12)
+# Show active Python version, it needs to be 3.10 or better (mine should currently be 3.10.12)
     python --version
 
-    # Show Jupyter packages, nbconvert needs to be in the list of installed
+# Show Jupyter packages, nbconvert needs to be in the list of installed
     jupyter --version
 ```
 
