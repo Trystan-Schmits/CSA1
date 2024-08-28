@@ -27,30 +27,34 @@ var linkTableInputField2 = document.getElementById("linkTableInputField2");
 var linkTableSubmitButton = document.getElementById("linkTableSubmitButton");
 var clearStorageButton = document.getElementById("clearStorage");
 var links = localStorage.getItem("links");
-if(!links){links=""; localStorage.setItem("links","")};
-links = links.split(",");
-for(let i = 0; i< links.length; i++){
-    links[i] = links[i].split("~");
-    if(link[i][0] == ""){continue;}
-    var newLink = document.createElement("a");
-    newLink.href = links[i][1];
-    newLink.innerText = links[i][0];
-    var tableHeader = document.createElement("th");
-    tableHeader.append(newLink);
-    linkTablePlaceInto.append(tableHeader);
-};
+var links1 = localStorage.getItem("links");
+if(!links){links=[""]; localStorage.setItem("links","")};
+if(typeof links != "object"){
+    links = links.split(",");
+    for(let i = 0; i< links.length; i++){
+        console.log(links[i].toString())
+        links[i] = links[i].split("~");
+        if(links[i][0] == ""){continue;}
+        var newLink = document.createElement("a");
+        newLink.href = links[i][1];
+        newLink.innerText = links[i][0];
+        var tableHeader = document.createElement("th");
+        tableHeader.append(newLink);
+        linkTablePlaceInto.append(tableHeader);
+    };
+}
 linkTableSubmitButton.addEventListener("click",()=>{
     var name = linkTableInputField.value;
     var link = linkTableInputField2.value;
     var newLink = document.createElement("a");
-    if (!(name.includes(",")||name.includes("~")||link.includes(",")||link.includes("~"))){
+    if (!(name.includes(",")||name.includes("~"))){
     newLink.href = link;
     newLink.innerText = name;
     var tableHeader = document.createElement("th");
     tableHeader.append(newLink);
     linkTablePlaceInto.append(tableHeader);
-    links.push(","+name+"~"+link);
-    localStorage.setItem("links",links);
+    links1 = links1 + ","+name+"~"+link;
+    localStorage.setItem("links",links1);
     }
 });
 clearStorage.addEventListener("click",()=>{

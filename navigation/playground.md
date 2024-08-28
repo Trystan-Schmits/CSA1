@@ -11,7 +11,7 @@ permalink: /playground/
 
 <script>
     var count = 0;
-    documenget.getElementById("cookie").addEventListener("click",()=>{
+    document.getElementById("cookie").addEventListener("click",()=>{
         count += 1;
         document.getElementById("counter").innerText = "cookies: "+count.toString();
     })
