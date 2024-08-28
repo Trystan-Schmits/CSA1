@@ -1,6 +1,6 @@
 # Configuration, override port with usage: make PORT=4200
 PORT ?= 4100
-REPO_NAME ?= student_2025
+REPO_NAME ?= CSA1 #Trystan's Personal Repository for csa tri 1
 LOG_FILE = /tmp/jekyll$(PORT).log
 
 SHELL = /bin/bash -c
