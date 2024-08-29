@@ -9,7 +9,7 @@ permalink: /playground/
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/2ChocolateChipCookies.jpg" alt="Two Chocolate Chip Cookies" id="cookie"/>
     <p id="counter">cookies: 0</p>
     <button id="multiplier">1.1x cookies, 10 cookies</button>
-    <button id="passive">passive cookie collection, 1000 cookies</button>
+    <button id="passive">passive cookie collection, 100 cookies</button>
 </div>
 <script>
     var count = 1000;
@@ -30,14 +30,14 @@ permalink: /playground/
             document.getElementById("counter").innerText = "cookies: "+Math.ceil(count).toString();
         }
     })
-    var cost1 = 1000;
+    var cost1 = 100;
     var passiveButton = document.getElementById("passive");
      passiveButton.addEventListener("click",function(){
         if (count >= cost1){
             count = Math.floor(count - cost1);
             passiveCount += 1;
             cost1 = cost1 * 1.5;
-            passiveButton.innerText = "passive cookie collection, " + Math.ceil(cost).toString() + " cookies";
+            passiveButton.innerText = "passive cookie collection, " + Math.ceil(cost1).toString() + " cookies";
             document.getElementById("counter").innerText = "cookies: "+Math.ceil(count).toString();
         }
     })
