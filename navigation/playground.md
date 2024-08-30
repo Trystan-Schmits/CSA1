@@ -10,13 +10,15 @@ permalink: /playground/
     <p id="counter">cookies: 0</p>
     <button id="multiplier">1.1x cookies, 10 cookies</button>
     <button id="passive">passive cookie collection, 100 cookies</button>
+    <button id="sacrifice">SACRIFICE THE COOKIES!, 3000 cookies</button>
 </div>
 <script>
     var count = 1000;
+    var bigMult = 1;
     var mult = 1;
     var passiveCount = 0;
     document.getElementById("cookie").addEventListener("click",function(){
-        count += 1 * mult;
+        count += 1 * mult * bigMult;
         document.getElementById("counter").innerText = "cookies: "+count.toFixed(0).toString();
     })
     var cost = 10;
@@ -41,8 +43,21 @@ permalink: /playground/
             document.getElementById("counter").innerText = "cookies: "+Math.ceil(count).toString();
         }
     })
+    var cost2 = 3000;
+    var sacrificeButton = document.getElementById("sacrifice");
+    sacrificeButton.addEventListener("click",function(){
+        if (count >= cost2){
+            count = 0;
+            passiveCount = 0;
+            mult = 1;
+            bigMult = bigMult * 1.8;
+            cost2 = cost2 * 2;
+            sacrificeButton.innerText = "SACRIFICE THE COOKIES!, " + Math.ceil(cost2).toString() + " cookies";
+            document.getElementById("counter").innerText = "cookies: "+Math.ceil(count).toString();
+        }
+    })
     setInterval(function(){
-            count += passiveCount;
+            count += passiveCount * bigMult;
             document.getElementById("counter").innerText = "cookies: "+Math.ceil(count).toString();
     },1000);
 </script>
