@@ -65,3 +65,14 @@ permalink: /playground/
             document.getElementById("counter").innerText = "cookies: "+Math.ceil(count).toString();
     },1000);
 </script>
+
+```
+class
+
+var objects = {};
+function
+
+```
+
+
+
