@@ -39,7 +39,7 @@ permalink: /playground/
             count = Math.floor(count - cost1);
             passiveCount += 1;
             cost1 = cost1 * 1.5;
-            passiveButton.innerText = "passive cookie collection, " + Math.ceil(cost1).toString() + " cookies";
+            multButton.innerText = "passive cookie collection, " + Math.ceil(cost).toString() + " cookies";
             document.getElementById("counter").innerText = "cookies: "+Math.ceil(count).toString();
         }
     })
@@ -48,6 +48,10 @@ permalink: /playground/
     sacrificeButton.addEventListener("click",function(){
         if (count >= cost2){
             count = 0;
+            cost1 = 100;
+            passiveButton.innerText = "passive cookie collection, " + Math.ceil(cost1).toString() + " cookies";
+            cost = 10;
+            passiveButton.innerText = "passive cookie collection, " + Math.ceil(cost1).toString() + " cookies";
             passiveCount = 0;
             mult = 1;
             bigMult = bigMult * 1.8;
