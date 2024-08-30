@@ -13,7 +13,7 @@ permalink: /playground/
     <button id="sacrifice">SACRIFICE THE COOKIES!, 3000 cookies</button>
 </div>
 <script>
-    var count = 1000;
+    var count = 3000;
     var bigMult = 1;
     var mult = 1;
     var passiveCount = 0;
