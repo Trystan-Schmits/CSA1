@@ -15,6 +15,8 @@ pip install nbconvert  # library for notebook conversion
 pip install nbformat  # notebook file utility
 pip install pyyaml  # notebook frontmatter
 
+bundle install
+
 #show versions
 # Show the active Ruby version, it needs to be 3 or higher
     ruby -v
