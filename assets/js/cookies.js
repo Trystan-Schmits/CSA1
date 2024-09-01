@@ -1,7 +1,7 @@
 
 
 var gameData = {
-    cookies: 1000, //cookie Counter
+    cookies: 0, //cookie Counter
     tableOfObjects: [], //global objects
     tableOfClickObjects: [], //click objects
     tableOfPassiveObjects: [], //passive objects
@@ -127,21 +127,22 @@ class cookieSacrifice {
     
     constructor(){
         if(!gameData.tableOfCostMultipliers["cookieSacrifice"]){
-            gameData.tableOfCostMultipliers["cookieSacrifice"] = 2;
+            gameData.tableOfCostMultipliers["cookieSacrifice"] = 100;
         }
         else {
-            gameData.tableOfCostMultipliers["cookieSacrifice"] *= 2;
+            gameData.tableOfCostMultipliers["cookieSacrifice"] *= 100;
         }
-        for (let [name, value] of Object.entries(gameData.tableOfCostMultipliers)) {
-            if (! name == "cookieSacrifice"){ value = 1};
-        }
+        Object.keys(gameData.tableOfCostMultipliers).forEach(name =>{
+            if(name != "cookieSacrifice") {gameData.tableOfCostMultipliers[name] = 1 }
+        })
         gameData.tableOfClickObjects.length = 0; //clear table
         gameData.tableOfPassiveObjects.length = 0; //clear table
+        gameData.cookies = 0;
     }
 
     type = classTypes.global; //non-static variables, used for information after object construction
-    cookies = 5;
-    multiplier = 2;
+    cookies = 10;
+    multiplier = 3;
 }
 
 //button updates
