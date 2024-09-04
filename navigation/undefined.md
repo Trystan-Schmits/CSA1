@@ -7,7 +7,7 @@ permalink: /undefined
 <style>
   img{
     opacity: 1.0;
-    transition: width 1s
+    transition: width 1s;
   }
   img : hover {
     opacity: 0;
