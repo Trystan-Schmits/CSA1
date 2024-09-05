@@ -11,3 +11,51 @@
 //@import "minima/minimal-mistakes/__minimal-mistakes"; //Minimal Mistakes theme 
 // Mix Light themes with this if your eyes are bleeding 
 @import "minima/dracula/dark-mode";
+
+$transition-distance: 20%;
+
+div{
+    position: static;
+    transition : 1s;
+}
+p,a,ul,li,h1,h2,h3,code, table {
+    position: relative;
+    transition: all 2s;
+    transition-behavior: normal;
+}
+
+p:hover {
+    transform:translateX($transition-distance);
+}
+
+a:hover {
+    transform:translateX($transition-distance);
+}
+
+ul:hover {
+    transform:translateX($transition-distance);
+}
+li:hover {
+    transform:translateX($transition-distance);
+}
+
+code:hover {
+    transform:translateX($transition-distance);
+}
+
+h1:hover {
+    transform:translateX($transition-distance);
+}
+h4:hover {
+    transform:translateX($transition-distance);
+}
+h3:hover {
+    transform:translateX($transition-distance);
+}
+h2:hover {
+    transform:translateX($transition-distance);
+}
+
+table:hover {
+    transform:translateX($transition-distance);
+}
