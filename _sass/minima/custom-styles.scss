@@ -18,7 +18,7 @@ div{
     position: static;
     transition : 1s;
 }
-p,a,ul,li,h1,h2,h3,code, table {
+p,a,ul,li,h1,h2,h3,table {
     position: relative;
     transition: all 2s;
     transition-behavior: normal;
@@ -35,23 +35,23 @@ a:hover {
 ul:hover {
     transform:translateX($transition-distance);
 }
-li:hover {
-    transform:translateX($transition-distance);
-}
 
-code:hover {
+li:hover {
     transform:translateX($transition-distance);
 }
 
 h1:hover {
     transform:translateX($transition-distance);
 }
+
 h4:hover {
     transform:translateX($transition-distance);
 }
+
 h3:hover {
     transform:translateX($transition-distance);
 }
+
 h2:hover {
     transform:translateX($transition-distance);
 }
