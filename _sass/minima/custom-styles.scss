@@ -18,7 +18,7 @@ div{
     position: static;
     transition : 1s;
 }
-p,a,ul,li,h1,h2,h3,table {
+p,a,ul,ol,li,h1,h2,h3,table {
     position: relative;
     transition: all 2s;
     transition-behavior: normal;
@@ -33,6 +33,10 @@ a:hover {
 }
 
 ul:hover {
+    transform:translateX($transition-distance);
+}
+
+ol:hover {
     transform:translateX($transition-distance);
 }
 
