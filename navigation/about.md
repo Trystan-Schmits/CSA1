@@ -44,6 +44,11 @@ I was born in St. Louis, Missouri, and moved to California just before 5th grade
     })
 </script>
 
+## some things I enjoy doing
+1. messing around
+2. fixing bugs, when I'm working on a project I prefer to not leave any possible bugs
+3. messing around *The balllllllll (this is the voice of the aliens from toy story)*
+
 <style>
         .container {
             display: block;
@@ -123,8 +128,6 @@ I was born in St. Louis, Missouri, and moved to California just before 5th grade
         var rot = rotation.toString() + "deg"; // sting
         canvas.style.transform= "translate(" + left + "," + top + ") rotate("+rot+")";
     }
-
-     
 
     var fps = 24;
     var active = true;
