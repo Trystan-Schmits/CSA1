@@ -5,8 +5,15 @@ permalink: /about/
 ---
 <style>
     img{
+        position: relative;
         width: 30%;
         height: auto;
+        left: 50%;
+        top: auto;
+    }
+    .imgOffset {
+        left: -50%;
+        top: auto;
     }
 </style>
 
@@ -16,6 +23,7 @@ I am currently in CSA, I have had prior experience in CSSE before ju,ping past c
 I was born in St. Louis, Missouri, and moved to California just before 5th grade.
 
 <img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/1200px-St_Louis_night_expblend_cropped.jpg" />
+<img id="myImage2" class="imgOffset" src="https://i.natgeofe.com/n/34265a2f-6c80-4b56-bd5d-f7202c908ffc/balboa-park-san-diego-california01_square.jpg" />
 
 ## Prior accomplishments:
 ### CSSE
@@ -34,14 +42,16 @@ I was born in St. Louis, Missouri, and moved to California just before 5th grade
         pasteInto.append(li);
     })
     var myImage = document.getElementById("myImage");
+    var myImage2 = document.getElementById("myImage2");
     var listOfEffects = ["blur(5px)","grayscale(100%)","invert(100%)","saturate(8)","sepia(100%)","hue-rotate(-90deg)"];
     var effectIndex = 0;
-    myImage.addEventListener("mouseenter",()=>{
+    function onEnter(){
         myImage.style.filter = listOfEffects[effectIndex];
-    })
-     myImage.addEventListener("mouseleave",()=>{
+        myImage2.style.filter = listOfEffects[effectIndex];
         effectIndex = (1 + effectIndex) % listOfEffects.length;
-    })
+    }
+    myImage.addEventListener("mouseenter",onEnter);
+    myImage2.addEventListener("mouseenter",onEnter);
 </script>
 
 ## some things I enjoy doing
