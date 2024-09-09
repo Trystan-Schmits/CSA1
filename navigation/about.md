@@ -5,7 +5,7 @@ permalink: /about/
 ---
 <style>
     img{
-        position: relative;
+        position: absolute;
         width: 30%;
         height: auto;
         left: 50%;
