@@ -19,7 +19,7 @@ permalink: /about/
         transition: 1s;
     }
     .extraMove:hover{
-        left: 50%;
+        left: 100%;
     }
 </style>
 
