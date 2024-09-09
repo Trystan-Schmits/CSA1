@@ -5,22 +5,8 @@ permalink: /about/
 ---
 <style>
     img{
-        position: relative;
         width: 30%;
         height: auto;
-        left: 0%;
-        top: auto;
-    }
-    .imgOffset {
-        left: -100%;
-        top: auto;
-    }
-    .extraMove{
-        position: relative;
-        transition: 1s;
-    }
-    .extraMove:hover{
-        left: 100%;
     }
 </style>
 
@@ -28,9 +14,10 @@ permalink: /about/
 ### Trystan Schmits
 I am currently in CSA, I have had prior experience in CSSE before ju,ping past csp to csa.
 I was born in St. Louis, Missouri, and moved to California just before 5th grade.
-<div class="extraMove">
-<img id="myImage2" class="imgOffset" src="https://i.natgeofe.com/n/34265a2f-6c80-4b56-bd5d-f7202c908ffc/balboa-park-san-diego-california01_square.jpg" /> <img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/1200px-St_Louis_night_expblend_cropped.jpg" /> 
-</div>
+
+<img id="myImage2" class="imgOffset" src="https://i.natgeofe.com/n/34265a2f-6c80-4b56-bd5d-f7202c908ffc/balboa-park-san-diego-california01_square.jpg" />
+<img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/1200px-St_Louis_night_expblend_cropped.jpg" /> 
+
 ## Prior accomplishments:
 ### CSSE
 <ol id="listToPasteInto">
