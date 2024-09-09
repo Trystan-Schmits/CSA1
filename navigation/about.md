@@ -12,8 +12,11 @@ permalink: /about/
         top: auto;
     }
     .imgOffset {
-        left: -50%;
+        left: -100%;
         top: auto;
+    }
+    .extraMove{
+        transition: 1s;
     }
     .extraMove:hover{
         left: 50%;
