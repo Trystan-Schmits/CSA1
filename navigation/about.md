@@ -5,10 +5,10 @@ permalink: /about/
 ---
 <style>
     img{
-        position: absolute;
+        position: relative;
         width: 30%;
         height: auto;
-        left: 50%;
+        left: 0%;
         top: auto;
     }
     .imgOffset {
@@ -22,8 +22,7 @@ permalink: /about/
 I am currently in CSA, I have had prior experience in CSSE before ju,ping past csp to csa.
 I was born in St. Louis, Missouri, and moved to California just before 5th grade.
 <p>
-<img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/1200px-St_Louis_night_expblend_cropped.jpg" />
-<img id="myImage2" class="imgOffset" src="https://i.natgeofe.com/n/34265a2f-6c80-4b56-bd5d-f7202c908ffc/balboa-park-san-diego-california01_square.jpg" />
+<img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/1200px-St_Louis_night_expblend_cropped.jpg" /> <img id="myImage2" class="imgOffset" src="https://i.natgeofe.com/n/34265a2f-6c80-4b56-bd5d-f7202c908ffc/balboa-park-san-diego-california01_square.jpg" />
 </p>
 ## Prior accomplishments:
 ### CSSE
