@@ -1,6 +1,14 @@
 export GIT_USER_NAME="Trysan-Schmits"
 export GIT_USER_EMAIL="trystan.yt.2@gmail.com"
 
+cd
+
+cd vscode
+
+git clone https://github.com/nighthawkcoders/portfolio_2025.git
+
+cd portfolio_2025/scripts
+
 # Function to check if a line exists in run commands
 line_exists_in_rc() {
   grep -Fxq "$1" ~/.bashrc
