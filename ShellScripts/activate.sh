@@ -54,6 +54,17 @@ code --install-extension GitHub.copilot
 python --version
 bundle --version
 
+# Clone the IJava repository into /tmp
+cd
+cd /tmp
+git clone https://github.com/frankfliu/IJava.git
+cd IJava
+# Install the Jupyter Java kernel
+./gradlew installKernel
+# Clean up by removing the IJava directory and downloaded files
+cd /tmp
+rm -rf IJava
+
 # Create a virtual environment if it doesn't exist
 if [ -d "venv" ]; then
     rm -rf venv
