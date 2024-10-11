@@ -78,7 +78,7 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 
 echo "bundle installing"
-gnome-terminal & disown -x bundle install
+bundle install
 
 # Activate session
 echo "source ~/.bashrc"
