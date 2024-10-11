@@ -77,8 +77,10 @@ source ./venv/bin/activate
 # Install the required Python packages
 pip install -r requirements.txt
 
-echo "bundle installing"
-bundle install
+echo "Run Bundle Install in vscode terminal"
+cd 
+cd vscode/CSA1
+code .
 
 # Activate session
 echo "source ~/.bashrc"
