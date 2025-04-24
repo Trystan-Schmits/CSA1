@@ -1,0 +1,53 @@
+<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+    <b>Iteration</b>: <br>
+    There are many different ways to iterate over values: <br>
+</p>
+<li> <code> while(condition) </code> - while loops, repeats whats on the inside while the condition remains true. <br>
+    <ol> 
+        <code> 
+            <pre>
+int t;
+while((t=streamReader.read())!=-1){
+    //do stuff
+}
+            </pre>
+        </code> this is a fairly common format for reading InputStreams </ol>
+</li>
+<li> <code> for(condition) </code> - for loops, generally used for iterating a certain number of times <br>
+    <ol> 
+        <code> 
+            <pre>
+for(int i=0; i<10; i++){
+    //do stuff
+}
+            </pre> 
+        </code> iterates from 0-9 </ol>
+    <ol> 
+        <code> 
+            <pre>
+for(Type v : array){
+    //do stuff
+} 
+            </pre>
+        </code> iterates through each value in an array</ol>
+</li>
+<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+    <b>Nested Iteration</b>: <br>
+    For each step in an outer loop, the inner loop does all of its steps
+</p>
+<li> 
+    <code> 
+        <pre>
+while(condition){
+    //for each outer loop
+    for(int i=0;i<10;i++){
+        //inner loop iterates through 1-10
+    }
+}
+        </pre>
+    </code> <br>
+</li>
+<p class="text-base leading-relaxed text-yellow dark:text-gray-400">
+    During the Ap exam a lot of questions rely on an understand of iteration.
+    Some even have you follow the execution of the loops yourself to determine what they do.
+</p>
