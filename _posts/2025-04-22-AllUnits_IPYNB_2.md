@@ -16,7 +16,7 @@ permalink: /showcase
             <div
                 class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
                 <h3 class="text-xl font-semibold text-gray-100">
-                    Static modal
+                    Information about the Unit
                 </h3>
                 <button 
                     id="model-toggle-inner"

@@ -1,6 +1,20 @@
 <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-    Hello
+    The main part of this unit is using object methods, especially those of common classes like String. <br>
+    A very tricky method is the String.substring() method. It has 2 variations:<br>
 </p>
+<li> substring(int index)</li>
+<li> substring(int start, int end)</li>
 <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-    World 2
+    The difficlt part of these two methods is the when an IndexOutOfBounds Exeption is thrown. <br>
+    For example: <br>
+</p>
+<li><code> ("Hello").substring(5, 6) </code> - causes an error</li>
+<li><code> ("Hello").substring(5) </code> - does not</li>
+<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+    This is because the first expression asks the string for the character at the 5th index. 
+    While the second expression does not.<br>
+</p>
+<p class="text-base leading-relaxed text-green dark:text-gray-400">
+    During the Ap exam we will have a reference sheet with all of the methods; 
+    but it is still good to remember how each method works.
 </p>

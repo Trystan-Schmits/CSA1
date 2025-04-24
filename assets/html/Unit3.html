@@ -1,0 +1,35 @@
+<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+    <b>Boolean expressions</b>: <br>
+    These are generally found contained within if statements, and are used to check conditions.
+    There are some basic boolean statements like: <br>
+</p>
+<li> <code> == </code> - equals</li>
+<li> <code> != </code> - not equal</li>
+<li> <code> ></code> - greater than</li>
+<li> <code> < </code> - less than</li>
+<li> <code> >= </code> - greater than or equal to</li>
+<li> <code> <= </code> - less than or equal to</li>
+<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+    And some more logical operations like: <br>
+</p>
+<li> <code> ! </code> - not</li>
+<li> <code> && </code> - and</li>
+<li> <code> || </code> - or</li>
+<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+    <b>De Morgan's Law</b>: <br>
+    Basically if a "not" statement is used outside of a block, it is equivical to everything inside the block flipping. <br>
+</p>
+<code>!(a && b) == !a || !b</code> <br>
+<code>!(a || b) == !a && !b</code> <br>
+<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+    <b>Comparing Objects</b>: <br>
+    References are compared using: <br>
+</p>
+<code>reference == reference</code> <br>
+<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+    null comparisons should be used with a reference check. <br>
+    If you want to compare if two objects by their values you should use comparison methods.
+</p>
+<li> <code> Object.equals() </code> - most common, <i>every object (arrays, classes) includes this method since it is inherited from the object class</i></li>
+<li> <code> Object.compareTo() </code> - returns an int with the result of the comparison, <i>not included on every class by default, but still fairly common</i></li>
+<li> <code> create your own </code> </li>
