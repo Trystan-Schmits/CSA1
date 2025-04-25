@@ -1,0 +1,34 @@
+<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+    <b>Inheritance</b>: <br>
+    This is personally my favorite unit, and the unit I seem to be the most consistent in. <br>
+    Inheritance is the relationship between classes, and allows for many similar classes to be created more efficently.<br>
+    You can create the subclass relationhsip to the parent class by: <br>
+</p>
+<code> class SubClass extends ParentClass {}</code>
+<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+    The subclass will then inherit all of the parent's classes attributes/methods. <br>
+    The subclass is also able to relate to the parent class by using the <b>super</b> keyword, 
+    which allows the subclass to call the parent classes methods and constructor. <br>
+  
+    <b>Polymorphism</b>: <br>
+    <i>I made a lesson on this :)</i> <br>
+    Polymorphism allows subclasses to override parent classes methods and ultize them at run time. <br>
+</p>
+<code>
+  <pre>
+class ParentClass{
+    public void greet(){
+      System.out.println("hello");
+    }
+}
+
+class SubClass extends ParentClass{
+    public void greet(){
+      System.out.println("hi");
+    }
+}
+
+ParentClass myClass = new SubClass();
+myClass.greet(); //outputs hi
+  </pre>
+</code>
